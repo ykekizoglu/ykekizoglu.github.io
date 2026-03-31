@@ -69,6 +69,27 @@
       line-height: 1.6;
     }
 
+    /* ABOUT */
+    .about {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 2rem 0;
+      width: 100%;
+    }
+    .about h2 {
+      font-size: 1rem;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+    .about p {
+      font-size: 0.92rem;
+      color: #777;
+      line-height: 1.7;
+      max-width: 600px;
+    }
+
     /* APPS */
     .apps {
       padding: 3rem 2rem 5rem;
@@ -136,6 +157,8 @@
   <nav>
     <a class="nav-brand" href="/">YKE Studios</a>
     <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#apps">Apps</a>
       <a href="mailto:ykekizoglu@gmail.com">Contact</a>
     </div>
   </nav>
@@ -145,13 +168,21 @@
     <p>Building mobile apps. Simple, useful, and well-designed.</p>
   </section>
 
-  <section class="apps">
+  <section class="about" id="about">
+    <h2>About</h2>
+    <p>I'm Yusuf Kenan Ekizoğlu, an independent mobile developer based in Hatay, Turkey. I build clean, focused apps under the YKE Studios brand.</p>
+  </section>
+
+  <section class="apps" id="apps">
     <h2>Apps</h2>
     <div class="app-grid">
       <div class="app-card">
         <h3>Su Vakti</h3>
         <p>Track your daily water intake. Set goals and reminders.</p>
-        <a href="/suvakti/">Privacy Policy</a>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <a href="mailto:ykekizoglu@gmail.com?subject=Su%20Vakti%20Support">Support</a>
+          <a href="/suvakti/">Privacy Policy</a>
+        </div>
       </div>
     </div>
   </section>
