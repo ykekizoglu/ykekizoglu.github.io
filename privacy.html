@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — YKE Studios</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background: #111;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    ::-webkit-scrollbar { width: 12px; }
+    ::-webkit-scrollbar-track { background: #111; }
+    ::-webkit-scrollbar-thumb { background: #444; border-radius: 6px; }
+    ::-webkit-scrollbar-thumb:hover { background: #666; }
+
+    .navbar {
+      background: rgba(10, 10, 10, 0.95) !important;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      border-bottom: 1px solid #222;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff !important;
+    }
+    .nav-link {
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 10%;
+      width: 0; height: 2px;
+      background: #fff;
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+    .nav-link:hover::after, .nav-link.active::after { width: 80%; }
+    .nav-link:hover { color: #fff !important; }
+
+    .page-header {
+      background: #0a0a0a;
+      padding: 70px 0 50px;
+      border-bottom: 1px solid #1e1e1e;
+    }
+    .page-header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      color: #fff;
+    }
+    .page-header p { color: rgba(255,255,255,0.45); }
+
+    .content-section {
+      padding: 70px 0;
+      flex: 1;
+    }
+
+    .policy-card {
+      background: #1a1a1a;
+      border: 1px solid #252525;
+      border-radius: 20px;
+      padding: 2.5rem;
+    }
+
+    .policy-section { margin-bottom: 2rem; }
+    .policy-section:last-child { margin-bottom: 0; }
+    .policy-section h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+    .policy-section p, .policy-section li {
+      color: #777;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+    .policy-section ul {
+      padding-left: 1.25rem;
+      margin: 0;
+    }
+
+    .effective-date {
+      display: inline-block;
+      background: #222;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    footer {
+      background: #0a0a0a;
+      border-top: 1px solid #1e1e1e;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
+      padding: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">YKE Studios</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/support.html">Support</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container text-center">
+      <h1 class="fw-bold mb-3">Privacy Policy</h1>
+      <p class="lead mb-0">How we handle your data — transparent and straightforward.</p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="content-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="policy-card">
+
+            <span class="effective-date">Effective date: March 31, 2026</span>
+
+            <div class="policy-section">
+              <h2>Overview</h2>
+              <p>This Privacy Policy applies to all applications published by YKE Studios, including Water Time. It has been prepared in accordance with the Turkish Personal Data Protection Law (KVKK, Law No. 6698) and Google Play's developer policies. By using our apps, you agree to the practices described in this policy.</p>
+            </div>
+
+            <div class="policy-section">
+              <h2>Data Controller</h2>
+              <p>The data controller responsible for your personal data is:</p>
+              <ul>
+                <li><strong style="color:#ccc;">Name:</strong> Yusuf Kenan Ekizoğlu (YKE Studios)</li>
+                <li><strong style="color:#ccc;">Location:</strong> Hatay, Turkey</li>
+                <li><strong style="color:#ccc;">Email:</strong> <span style="font-family: monospace;">ykekizoglu@gmail.com</span></li>
+              </ul>
+            </div>
+
+            <div class="policy-section">
+              <h2>Data We Collect</h2>
+              <p>We, as YKE Studios, do not directly collect any personal data. However, our apps use Google AdMob to display advertisements. AdMob may collect the following data on our behalf:</p>
+              <ul>
+                <li>Advertising ID (GAID) and similar device identifiers</li>
+                <li>IP address and approximate location (country/region level)</li>
+                <li>Device information (model, OS version, language)</li>
+                <li>Ad interaction data (impressions, clicks)</li>
+                <li>App usage data related to ad delivery</li>
+              </ul>
+              <p>This data is collected by Google LLC and processed under Google's own privacy policy. We do not have direct access to this data.</p>
+            </div>
+
+            <div class="policy-section">
+              <h2>Data Stored on Your Device</h2>
+              <p>Our apps store app-related data locally on your device (e.g., your water intake records and preferences in Water Time). This data never leaves your device and is not accessible to us. You can delete it at any time by uninstalling the app.</p>
+            </div>
+
+            <div class="policy-section">
+              <h2>Purpose and Legal Basis of Data Processing</h2>
+              <p>The data collected via Google AdMob is used solely for the purpose of displaying relevant advertisements within the app. The legal basis for this processing is our legitimate interest in providing a free app supported by advertising revenue (KVKK Article 5/2-f), and where applicable, your consent.</p>
+            </div>
+
+            <div class="policy-section">
+              <h2>Third-Party Services</h2>
+              <p>Our apps use Google AdMob, a third-party advertising service provided by Google LLC. AdMob operates under Google's Privacy Policy. We encourage you to review it:</p>
+              <ul>
+                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color: #aaa;">Google Privacy Policy</a></li>
+                <li><a href="https://support.google.com/ads/answer/2662922" target="_blank" rel="noopener" style="color: #aaa;">Opt out of personalized ads</a></li>
+              </ul>
+              <p>You can opt out of personalized advertising at any time through your device settings (Google Settings &gt; Ads &gt; Opt out of Ads Personalization).</p>
+            </div>
+
+            <div class="policy-section">
+              <h2>International Data Transfer</h2>
+              <p>Data collected by Google AdMob may be transferred to and processed on Google's servers, which may be located outside of Turkey. Google LLC complies with applicable international data transfer frameworks. For more information, refer to Google's Privacy Policy.</p>
+            </div>
+
+            <div class="policy-section">
+              <h2>Data Retention</h2>
+              <p>We do not retain any personal data on our own systems. Data collected by Google AdMob is retained according to Google's own data retention policies. App data stored locally on your device is retained until you uninstall the app.</p>
+            </div>
+
+            <div class="policy-section">
+              <h2>Children's Privacy</h2>
+              <p>Our apps are not directed at children under the age of 13. We do not knowingly collect personal data from children. If you believe a child has provided personal data through our app, please contact us so we can take appropriate action. Our use of AdMob is configured to comply with applicable child-directed content regulations (COPPA).</p>
+            </div>
+
+            <div class="policy-section">
+              <h2>Your Rights (KVKK Article 11)</h2>
+              <p>Under the Turkish Personal Data Protection Law, you have the following rights regarding your personal data:</p>
+              <ul>
+                <li>The right to learn whether your personal data is being processed</li>
+                <li>The right to request information about the processing</li>
+                <li>The right to learn the purpose of processing and whether it is used accordingly</li>
+                <li>The right to know the third parties to whom data is transferred</li>
+                <li>The right to request correction of incomplete or inaccurate data</li>
+                <li>The right to request deletion or destruction of personal data</li>
+                <li>The right to object to processing</li>
+                <li>The right to claim compensation for damages arising from unlawful processing</li>
+              </ul>
+              <p>To exercise these rights, please contact us at <span style="font-family: monospace; color: #aaa;">ykekizoglu@gmail.com</span>. We will respond within 30 days as required by law.</p>
+            </div>
+
+            <div class="policy-section">
+              <h2>Changes to This Policy</h2>
+              <p>If we update this Privacy Policy, the new version will be posted on this page with an updated effective date. We encourage you to review this page periodically.</p>
+            </div>
+
+            <div class="policy-section">
+              <h2>Contact</h2>
+              <p>If you have any questions about this Privacy Policy, feel free to contact us at <span style="font-family: monospace; color: #aaa;">ykekizoglu@gmail.com</span>.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="mt-auto">
+    <div class="container text-center">
+      <p class="m-0 text-white-50">Copyright &copy; YKE Studios 2026 &mdash; Yusuf Kenan Ekizoğlu</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
