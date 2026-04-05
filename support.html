@@ -15,29 +15,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/styles.css" />
   <style>
-    .app-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: #222;
-      border: 1px solid #333;
-      border-radius: 14px;
-      padding: 10px 16px;
-      margin-bottom: 1.5rem;
-    }
-    .app-badge-icon {
-      font-size: 1.5rem;
-    }
-    .app-badge-name {
-      font-weight: 700;
-      color: #fff;
-      font-size: 0.95rem;
-    }
-    .app-badge-sub {
-      color: #666;
-      font-size: 0.8rem;
-    }
-
     .faq-item {
       border-bottom: 1px solid #222;
       padding: 1.25rem 0;
@@ -58,10 +35,7 @@
       height: 100%;
     }
     .quick-card:hover { border-color: #444; transform: translateY(-5px); box-shadow: 0 16px 40px rgba(0,0,0,0.4); }
-    .quick-card-icon {
-      font-size: 2rem;
-      margin-bottom: 0.75rem;
-    }
+    .quick-card-icon { font-size: 2rem; margin-bottom: 0.75rem; }
     .quick-card-title { font-weight: 700; color: #fff; font-size: 1rem; margin-bottom: 0.35rem; }
     .quick-card-desc { color: #666; font-size: 0.85rem; margin: 0; }
 
@@ -77,23 +51,45 @@
       flex-wrap: wrap;
     }
 
-    .btn-email {
-      background: #fff;
-      border: none;
-      padding: 12px 28px;
-      border-radius: 12px;
-      font-weight: 600;
-      color: #111;
-      font-size: 0.9rem;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
-      white-space: nowrap;
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #444;
+      margin-bottom: 1rem;
     }
-    .btn-email:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.4); color: #111; background: #e8e8e8; }
 
+    .app-faq-card {
+      background: #1a1a1a;
+      border: 1px solid #252525;
+      border-radius: 20px;
+      padding: 2rem 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .app-faq-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid #222;
+    }
+    .app-faq-icon {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .app-faq-name {
+      font-weight: 700;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .app-faq-sub {
+      color: #555;
+      font-size: 0.8rem;
+    }
   </style>
 </head>
 <body>
@@ -131,18 +127,25 @@
       <!-- QUICK LINKS -->
       <div class="row justify-content-center g-3 mb-5">
         <div class="col-6 col-md-4 col-lg-3">
-          <a href="#faq" class="quick-card">
+          <a href="#general" class="quick-card">
             <div class="quick-card-icon">💬</div>
-            <div class="quick-card-title">FAQ</div>
-            <p class="quick-card-desc">Find quick answers to common questions.</p>
+            <div class="quick-card-title">General FAQ</div>
+            <p class="quick-card-desc">Common questions about all our apps.</p>
           </a>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
-          <div class="quick-card">
+          <a href="#app-faq" class="quick-card">
+            <div class="quick-card-icon">📱</div>
+            <div class="quick-card-title">App FAQ</div>
+            <p class="quick-card-desc">Questions specific to each app.</p>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a class="quick-card obf-mailto" data-u="yke.devstudios" data-d="gmail.com">
             <div class="quick-card-icon">✉️</div>
             <div class="quick-card-title">Email Support</div>
-            <p class="quick-card-desc" style="font-family: monospace;">yke.devstudios@gmail.com</p>
-          </div>
+            <p class="quick-card-desc"><span class="obf-email" data-u="yke.devstudios" data-d="gmail.com" style="font-family: monospace;"></span></p>
+          </a>
         </div>
         <div class="col-6 col-md-4 col-lg-3">
           <a href="/privacy.html" class="quick-card">
@@ -154,20 +157,41 @@
       </div>
 
       <div class="row justify-content-center g-4">
+        <div class="col-lg-8">
 
-        <!-- FAQ -->
-        <div class="col-lg-8" id="faq">
-          <div class="info-card mb-4">
-            <div class="app-badge">
-              <span class="app-badge-icon">💧</span>
+          <!-- GENERAL FAQ -->
+          <p class="section-label" id="general">General Questions</p>
+          <div class="info-card mb-5">
+            <div class="faq-item">
+              <p class="faq-question">Is my data stored online?</p>
+              <p class="faq-answer">No. All YKE Studios apps work completely offline. Any data you enter is stored only on your device and never sent to any server.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-question">Why am I seeing ads?</p>
+              <p class="faq-answer">Our apps are free to use and supported by ads via Google AdMob. You can opt out of personalized ads at any time through your device's Google Settings → Ads → Opt out of Ads Personalization.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-question">How do I delete my data?</p>
+              <p class="faq-answer">You can delete all locally stored data at any time by uninstalling the app. Some apps also offer an in-app deletion option — check the App FAQ below for details.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-question">How can I contact support?</p>
+              <p class="faq-answer">Send us an email at the address shown below. We typically respond within 24–48 hours.</p>
+            </div>
+          </div>
+
+          <!-- APP-SPECIFIC FAQ -->
+          <p class="section-label" id="app-faq">App-Specific Questions</p>
+
+          <!-- Fill Up -->
+          <div class="app-faq-card">
+            <div class="app-faq-header">
+              <img src="/icon.png" alt="Fill Up icon" class="app-faq-icon" />
               <div>
-                <div class="app-badge-name">Fill Up</div>
-                <div class="app-badge-sub">Daily Water Tracker</div>
+                <div class="app-faq-name">Fill Up — Time to Water</div>
+                <div class="app-faq-sub">Daily Water Tracker · Android</div>
               </div>
             </div>
-
-            <h2 class="h5 fw-bold text-white mb-3">Frequently Asked Questions</h2>
-
             <div class="faq-item">
               <p class="faq-question">How do I set my daily water goal?</p>
               <p class="faq-answer">Open the app, go to Settings, and enter your target under "Daily Goal". You can use the suggested amount based on your weight or set a custom value.</p>
@@ -177,16 +201,8 @@
               <p class="faq-answer">In the Reminders tab, toggle on "Reminders" and choose your preferred notification interval and active hours.</p>
             </div>
             <div class="faq-item">
-              <p class="faq-question">Is my data stored online?</p>
-              <p class="faq-answer">No. Fill Up works completely offline. All your data (name, height, weight, water records) is stored only on your device and never sent to any server.</p>
-            </div>
-            <div class="faq-item">
               <p class="faq-question">How do I reset my daily progress?</p>
-              <p class="faq-answer">Your progress resets automatically at midnight each day. You can permanently delete all data via Settings &rarr; Delete My Account.</p>
-            </div>
-            <div class="faq-item">
-              <p class="faq-question">Why am I seeing ads?</p>
-              <p class="faq-answer">Fill Up is free to use and supported by ads (Google AdMob). You can opt out of personalized ads in your device's Google Settings &rarr; Ads.</p>
+              <p class="faq-answer">Your progress resets automatically at midnight each day. You can permanently delete all data via Settings → Delete My Account.</p>
             </div>
             <div class="faq-item">
               <p class="faq-question">What is the streak shield?</p>
@@ -195,16 +211,16 @@
           </div>
 
           <!-- Contact -->
-          <div class="contact-card">
+          <div class="contact-card mt-2">
             <div>
               <h2 class="h5 fw-bold text-white mb-1">Still need help?</h2>
               <p class="text-muted mb-1">Can't find what you're looking for? Send us an email.</p>
               <p class="text-muted mb-0" style="font-size: 0.85rem;">We typically respond within <strong class="text-white">24–48 hours</strong>.</p>
             </div>
-            <p class="mb-0" style="font-family: monospace; font-size: 1rem; color: #aaa;">yke.devstudios@gmail.com</p>
+            <p class="mb-0"><span class="obf-email" data-u="yke.devstudios" data-d="gmail.com" style="font-family: monospace; font-size: 1rem; color: #aaa;"></span></p>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
   </section>
@@ -212,10 +228,11 @@
   <!-- FOOTER -->
   <footer class="mt-auto">
     <div class="container text-center">
-      <p class="m-0 text-white-50">Copyright &copy; YKE Studios 2026 &mdash; Yusuf Kenan Ekizoğlu</p>
+      <p class="m-0 text-white-50">Copyright &copy; YKE Studios 2026</p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/scripts.js"></script>
 </body>
 </html>
