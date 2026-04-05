@@ -1,0 +1,83 @@
+/* =========================================
+   YKE Studios — Shared Stylesheet
+   ========================================= */
+
+/* BASE */
+body {
+  background: #111;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-thumb { background: #444; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: #666; }
+
+/* NAVBAR */
+.navbar {
+  background: rgba(10, 10, 10, 0.95) !important;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  border-bottom: 1px solid #222;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff !important;
+}
+.nav-link {
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 10%;
+  width: 0; height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+.nav-link:hover::after, .nav-link.active::after { width: 80%; }
+.nav-link:hover { color: #fff !important; }
+
+/* PAGE HEADER (about, support, privacy) */
+.page-header {
+  background: #0a0a0a;
+  padding: 70px 0 50px;
+  border-bottom: 1px solid #1e1e1e;
+}
+.page-header h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #fff;
+}
+.page-header p { color: rgba(255,255,255,0.45); }
+
+/* CONTENT SECTION (about, support, privacy) */
+.content-section {
+  padding: 70px 0;
+  flex: 1;
+}
+
+/* INFO CARD (about, support) */
+.info-card {
+  background: #1a1a1a;
+  border: 1px solid #252525;
+  border-radius: 20px;
+  padding: 2.5rem;
+  transition: border-color 0.3s ease;
+}
+.info-card:hover { border-color: #3a3a3a; }
+
+/* FOOTER */
+footer {
+  background: #0a0a0a;
+  border-top: 1px solid #1e1e1e;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
+  padding: 2rem 0;
+}
