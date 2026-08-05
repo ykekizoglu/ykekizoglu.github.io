@@ -153,8 +153,8 @@
 
             <!-- Version bar -->
             <div class="version-bar">
-              <span class="version-badge">Version 1.9</span>
-              <span class="version-badge">Effective date: August 1, 2026</span>
+              <span class="version-badge">Version 2.0</span>
+              <span class="version-badge">Effective date: August 5, 2026</span>
             </div>
 
             <!-- 1. Overview -->
@@ -182,11 +182,11 @@
               <ul>
                 <li>Your name, email address, or any account credentials</li>
                 <li>Your precise location or GPS data</li>
-                <li>Your contacts, camera, or microphone data</li>
+                <li>Your contacts or camera data</li>
                 <li>Any financial or payment information</li>
                 <li>Any content you create in an app — your transactions, notes, or game progress — it stays on your device</li>
               </ul>
-              <p>We do not operate any servers that store personal data. Where an app offers subscriptions, a limited set of purchase data is processed on our behalf by Adapty, as described in the <a href="#purchases" style="color: #aaa;">In-App Purchases &amp; Subscriptions</a> section. It never includes your name or payment details.</p>
+              <p>We do not operate any servers that store personal data. Where an app offers subscriptions, a limited set of purchase data is processed on our behalf by Adapty, as described in the <a href="#purchases" style="color: #aaa;">In-App Purchases &amp; Subscriptions</a> section. It never includes your name or payment details. Where an app records optional voice notes (currently ToDoHub), that audio is stored only on your device and is never uploaded to us or to any third party — see <a href="#app-notes" style="color: #aaa;">App-Specific Notes</a>.</p>
             </div>
 
             <!-- 4. Data Stored on Your Device -->
@@ -214,7 +214,7 @@
             <div class="policy-section" id="purchases">
               <h2>In-App Purchases &amp; Subscriptions</h2>
               <p>Some of our apps offer in-app purchases and auto-renewable subscriptions. All payments are processed by the Apple App Store or Google Play — we never receive or store your card or payment details.</p>
-              <p>Most of our apps rely solely on the store's built-in purchase system, with no third-party purchase SDK. Some apps that offer subscriptions (currently MoneyHub) additionally use <strong style="color:#ccc;">Adapty</strong> (Adapty Tech Inc.), a subscription-management service, to validate purchases and keep subscription status in sync across your devices. Where Adapty is used, it processes a limited set of purchase data on our behalf:</p>
+              <p>Most of our apps rely solely on the store's built-in purchase system, with no third-party purchase SDK. Some apps that offer subscriptions (currently MoneyHub and ToDoHub) additionally use <strong style="color:#ccc;">Adapty</strong> (Adapty Tech Inc.), a subscription-management service, to validate purchases and keep subscription status in sync across your devices. Where Adapty is used, it processes a limited set of purchase data on our behalf:</p>
               <ul>
                 <li>The purchase receipt or transaction token issued by Apple or Google</li>
                 <li>The product identifier and subscription status (active, expired, in trial, or canceled)</li>
@@ -267,7 +267,7 @@
                 <li><a href="https://support.google.com/ads/answer/2662922" target="_blank" rel="noopener noreferrer" style="color: #aaa;">Opt out of personalized ads</a></li>
               </ul>
               <p>You can opt out of personalized advertising at any time through your device settings (Google Settings &gt; Ads &gt; Opt out of Ads Personalization).</p>
-              <p>Some apps that offer subscriptions (currently MoneyHub) also use <strong style="color:#ccc;">Adapty</strong> (Adapty Tech Inc.) to validate purchases and manage subscription status, as described in the "In-App Purchases &amp; Subscriptions" section above:</p>
+              <p>Some apps that offer subscriptions (currently MoneyHub and ToDoHub) also use <strong style="color:#ccc;">Adapty</strong> (Adapty Tech Inc.) to validate purchases and manage subscription status, as described in the "In-App Purchases &amp; Subscriptions" section above:</p>
               <ul>
                 <li><a href="https://adapty.io/privacy/" target="_blank" rel="noopener noreferrer" style="color: #aaa;">Adapty Privacy Policy</a></li>
               </ul>
@@ -338,6 +338,11 @@
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>2.0</td>
+                    <td>August 5, 2026</td>
+                    <td>Added app-specific notes for ToDoHub, and a microphone/voice-note disclosure.</td>
+                  </tr>
                   <tr>
                     <td>1.9</td>
                     <td>August 1, 2026</td>
@@ -519,6 +524,25 @@
                   <li style="color: #777; font-size: 0.92rem; line-height: 1.7;"><strong style="color:#ccc;">In-app purchases:</strong> A one-time Remove Ads purchase is offered, processed directly by Apple/Google. No third-party purchase SDK is used, and no payment details reach us.</li>
                   <li style="color: #777; font-size: 0.92rem; line-height: 1.7;"><strong style="color:#ccc;">Advertising:</strong> Uses Google AdMob.</li>
                   <li style="color: #777; font-size: 0.92rem; line-height: 1.7;"><strong style="color:#ccc;">In-app data deletion:</strong> Remove all locally stored data by uninstalling the app.</li>
+                </ul>
+              </div>
+
+              <!-- ToDoHub -->
+              <div class="app-note-card">
+                <div class="app-note-header">
+                  <img src="/icon_todohub.png" alt="ToDoHub icon" class="app-note-icon" />
+                  <div>
+                    <div class="app-note-name">ToDoHub</div>
+                    <div class="app-note-sub">Smart Notes &amp; To-Do Manager · iOS &amp; Android (coming soon)</div>
+                  </div>
+                </div>
+                <ul style="margin: 0; padding-left: 1.25rem;">
+                  <li style="color: #777; font-size: 0.92rem; line-height: 1.7;"><strong style="color:#ccc;">Data collected:</strong> Tasks, notes, projects, tags, and reminders — stored only on your device. No account required.</li>
+                  <li style="color: #777; font-size: 0.92rem; line-height: 1.7;"><strong style="color:#ccc;">Microphone / voice notes:</strong> ToDoHub lets you attach an optional voice recording to a task or note. Recording only happens when you tap the record button, and the audio file is saved locally on your device — it is never uploaded to us or to any third party.</li>
+                  <li style="color: #777; font-size: 0.92rem; line-height: 1.7;"><strong style="color:#ccc;">Notifications:</strong> Task reminders are scheduled locally on your device. There is no push server, and no reminder content leaves your phone.</li>
+                  <li style="color: #777; font-size: 0.92rem; line-height: 1.7;"><strong style="color:#ccc;">In-app purchases:</strong> ToDoHub Pro (monthly or annual subscription) and a one-time Remove Ads purchase are offered. Payments are handled by Apple/Google and validated via Adapty; no payment details reach us.</li>
+                  <li style="color: #777; font-size: 0.92rem; line-height: 1.7;"><strong style="color:#ccc;">Advertising:</strong> Uses Google AdMob.</li>
+                  <li style="color: #777; font-size: 0.92rem; line-height: 1.7;"><strong style="color:#ccc;">In-app data deletion:</strong> Not available as a separate option — uninstall the app to permanently delete all locally stored data, including any voice recordings.</li>
                 </ul>
               </div>
 
